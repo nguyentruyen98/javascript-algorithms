@@ -25,4 +25,4 @@ export function selectionSort(arr) {
 
   return arr;
 }
-testPerformance(SelectionSort);
+// testPerformance(selectionSort);

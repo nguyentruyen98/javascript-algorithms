@@ -1,5 +1,3 @@
-import { RANDOM_ARRAY, testPerformance } from "../utils/index.js";
-
 function merge(left, right) {
   let sortedArr = [];
   while (left.length && right.length) {
@@ -20,11 +18,6 @@ export function mergeSort(arr) {
 
   const left = mergeSort(arr.slice(0, mid));
   const right = mergeSort(arr.slice(mid));
-  console.log(
-    `Left: ${left} right: ${right},result: ${merge([...left], [...right])}`
-  );
+
   return merge(left, right);
 }
-
-const a = mergeSort([10, 24, 5, 6, 76, 4, 6, 73]);
-console.log(a);

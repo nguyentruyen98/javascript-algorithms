@@ -4,6 +4,12 @@ export function swap(a, b) {
   return [b, a];
 }
 
+export function swapEl(arr, i, j) {
+  const tmp = arr[i];
+  arr[i] = arr[j];
+  arr[j] = tmp;
+}
+
 export function testPerformance(cb) {
   const start = performance.now();
   let i = 0;

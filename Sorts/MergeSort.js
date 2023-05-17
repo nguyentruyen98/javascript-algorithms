@@ -11,7 +11,7 @@ function merge(left, right) {
   return [...sortedArr, ...left, ...right];
 }
 
-export function mergeSort(arr) {
+function mergeSort(arr) {
   if (arr.length <= 1) return arr;
 
   let mid = Math.floor(arr.length / 2);
@@ -21,3 +21,4 @@ export function mergeSort(arr) {
 
   return merge(left, right);
 }
+export { mergeSort };

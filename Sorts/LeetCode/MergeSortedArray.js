@@ -27,7 +27,6 @@ export function mergeSortedArray(nums1, m, nums2, n) {
     }
     i++;
   }
-  console.log(nums1);
 }
 
 mergeSortedArray([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3);

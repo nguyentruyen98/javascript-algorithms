@@ -22,4 +22,3 @@ const list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
 const list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
 
 const a = mergeTwoLists(list1, list2);
-console.log(a);

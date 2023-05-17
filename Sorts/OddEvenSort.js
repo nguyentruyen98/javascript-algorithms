@@ -19,7 +19,6 @@ export function oddEvenSort(arr) {
       }
     }
   }
-  console.log(arr);
   return arr;
 }
 oddEvenSort([0, 0, -1]);

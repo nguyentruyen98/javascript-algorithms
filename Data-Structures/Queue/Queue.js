@@ -56,14 +56,3 @@ class Queue {
 }
 
 export { Queue };
-const asd = new Queue();
-asd.enqueue(1);
-// console.log(asd);
-
-asd.enqueue(2);
-asd.enqueue(3);
-asd.dequeue();
-asd.dequeue();
-// const a = asd.toArray();
-// asd.enqueue(3);
-console.log("asd", asd);

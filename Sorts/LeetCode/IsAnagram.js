@@ -28,5 +28,4 @@ var isAnagram = function (s, t) {
 //   }
 //   return true;
 // };
-const a = isAnagram("!@#", "#@!");
-console.log(a);
+export { isAnagram };

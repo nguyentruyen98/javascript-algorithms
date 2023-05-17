@@ -15,3 +15,4 @@ function containsDuplicate(nums) {
   }
   return false;
 }
+export { containsDuplicate };

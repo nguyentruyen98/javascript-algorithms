@@ -1,31 +1,52 @@
-// *Ref: https://leetcode.com/problems/valid-anagram/description/
+// // *Ref: https://leetcode.com/problems/valid-anagram/description/
 
-var isAnagram = function (s, t) {
-  if (s.length !== t.length) {
-    return false;
-  }
-
-  var freq = new Array(26).fill(0);
-  for (var i = 0; i < s.length; i++) {
-    freq[s.charCodeAt(i) - "a".charCodeAt(0)]++;
-    freq[t.charCodeAt(i) - "a".charCodeAt(0)]--;
-  }
-
-  for (var i = 0; i < freq.length; i++) {
-    if (freq[i] !== 0) {
-      return false;
-    }
-  }
-
-  return true;
-};
 // var isAnagram = function (s, t) {
-//   if (s.length !== t.length) return false;
-//   const arrS = s.split("").sort();
-//   const arrT = t.split("").sort();
-//   for (let i = 0; i < arrS.length; i++) {
-//     if (arrS[i] !== arrT[i]) return false;
+//   if (s.length !== t.length) {
+//     return false;
 //   }
+
+//   var freq = new Array(26).fill(0);
+//   for (var i = 0; i < s.length; i++) {
+//     freq[s.charCodeAt(i) - "a".charCodeAt(0)]++;
+//     freq[t.charCodeAt(i) - "a".charCodeAt(0)]--;
+//   }
+
+//   for (var i = 0; i < freq.length; i++) {
+//     if (freq[i] !== 0) {
+//       return false;
+//     }
+//   }
+
 //   return true;
 // };
-export { isAnagram };
+// // var isAnagram = function (s, t) {
+// //   if (s.length !== t.length) return false;
+// //   const arrS = s.split("").sort();
+// //   const arrT = t.split("").sort();
+// //   for (let i = 0; i < arrS.length; i++) {
+// //     if (arrS[i] !== arrT[i]) return false;
+// //   }
+// //   return true;
+// // };
+// export { isAnagram };
+
+// const thenable = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//       resolve([89, 45, 323]);
+//   }, 100);
+// });
+
+const thenable = {
+  then(onFulfill, onReject) {
+    setTimeout(() => {
+      onFulfill(1);
+    }, 100);
+  },
+};
+const myPromise = Promise.resolve(thenable);
+
+myPromise.then((value) => {
+  console.log(value + 1);
+});
+// static method: Gọi method trực tiếp từ class
+// instance method: Phải bắt buộc gọi method từ instance của class đó

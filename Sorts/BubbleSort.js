@@ -2,7 +2,6 @@ import { RANDOM_ARRAY, swap, testPerformance } from "../utils/index.js";
 
 export const bubbleSort = (arr) => {
   let stopIndex = arr.length;
-
   while (stopIndex > 1) {
     for (let i = 0; i < stopIndex; i++) {
       if (arr[i] > arr[i + 1]) {
@@ -15,4 +14,5 @@ export const bubbleSort = (arr) => {
   }
   return arr;
 };
-// testPerformance(bubbleSort);
+bubbleSort(RANDOM_ARRAY);
+testPerformance(bubbleSort);
